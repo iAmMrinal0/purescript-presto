@@ -21,11 +21,11 @@ module Presto.Core.Types.API
 
 import Prelude
 
-import Data.Foreign (F)
-import Data.Foreign.Class (class Decode, class Encode)
-import Data.Foreign.Generic.Class (class GenericDecode, class GenericEncode)
 import Data.Generic.Rep (class Generic)
-import Presto.Core.Utils.Encoding (defaultDecode, defaultEncode, defaultDecodeJSON, defaultEncodeJSON)
+import Foreign (F)
+import Foreign.Class (class Decode, class Encode)
+import Foreign.Generic.Class (class GenericDecode, class GenericEncode)
+import Presto.Core.Utils.Encoding (defaultDecode, defaultDecodeJSON, defaultEncode, defaultEncodeJSON)
 
 class RestEndpoint a b | a -> b, b -> a where
   makeRequest :: a -> Headers -> Request

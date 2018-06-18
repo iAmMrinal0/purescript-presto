@@ -1,14 +1,14 @@
 module Test.TestData.Some where
 
 import Prelude
-import Control.Monad.Eff.Exception (Error)
-import Data.Foreign.Class (class Decode, class Encode)
+
 import Data.Generic.Rep (class Generic) as G
 import Data.Maybe (Maybe(..))
-
-import Presto.Core.Utils.Encoding (defaultDecode, defaultEncode)
-import Presto.Core.Types.Language.Storage (class Serializable)
+import Effect.Exception (Error)
+import Foreign.Class (class Decode, class Encode)
 import Presto.Core.Types.Language.Interaction (class Interact, defaultInteract)
+import Presto.Core.Types.Language.Storage (class Serializable)
+import Presto.Core.Utils.Encoding (defaultDecode, defaultEncode)
 
 newtype Some = Some { someField :: String }
 

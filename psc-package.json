@@ -1,0 +1,25 @@
+{
+  "name": "presto",
+  "set": "psc-0.12.0-20181002",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "aff",
+    "avar",
+    "console",
+    "control",
+    "effect",
+    "exceptions",
+    "exists",
+    "foreign-generic",
+    "foreign-object",
+    "free",
+    "generics-rep",
+    "prelude",
+    "psci-support",
+    "record",
+    "spec",
+    "transformers",
+    "tuples",
+    "typelevel-prelude"
+  ]
+}
